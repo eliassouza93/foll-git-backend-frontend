@@ -18,15 +18,5 @@ export async function getFollowers() {
     }
   );
 
-  // const follAll = followers.filter(
-  //   (f: any) => detect(f.login.split(/[-_]/)[0]) === "female"
-  // );
-
   return { seguidores: followers };
-  // retorna homem ou mulher
-  //   return {
-  //     totalSeguidores: followers.length,
-  //     totalMulheres: mulheres.length,
-  //     mulheres: mulheres.map((m: any) => m.login),
-  //   };
 }
